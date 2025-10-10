@@ -28,8 +28,9 @@ const Hero: React.FC = () => {
             <ArrowRight className="ml-2 -mr-1 h-5 w-5" />
           </a>
           <a
-            href="/Saurav_Shyju_Resume.pdf" // Link to resume in public folder
-            download
+            href="https://drive.google.com/file/d/1MORy9okvPwiFq3ZV7Jbj3eMekPFL112_/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-indigo-700 dark:text-indigo-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Download Resume
