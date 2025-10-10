@@ -1,0 +1,14 @@
+[
+  {
+    "role": "Senior Software Engineer",
+    "organization": "Zscaler",
+    "dates": "June 2022 - Present",
+    "responsibilities": [
+      "Architected and spearheaded the development of ZCoder, the company's first internally-hosted LLM coding assistant. Drove the project from initial concept to General Availability, achieving widespread adoption across the entire engineering organization and receiving direct kudos from the CEO, CTO, and CIO.",
+      "Invented and engineered a novel, patent-pending dependency and repository parsing methodology to provide deep contextual awareness for LLMs. This innovation significantly enhanced the model’s ability to reason about complex, unfamiliar codebases.",
+      "Led the technical evaluation, proof-of-concept, and procurement process for third-party AI tools, including Google’s Gemini Code Assist, serving as the subject matter expert to establish rigorous evaluation frameworks and guide strategic decision-making.",
+      "Designed and implemented the scalable, cloud-native infrastructure for Code Copilots on Kubernetes (EKS), integrating technologies such as Neo4j for graph-based analysis, Redis for high-speed caching, and MongoDB for document storage to ensure high availability and performance.",
+      "Championed AI/ML adoption by presenting at company-wide tech talks and conducting over 30 tailored onboarding sessions for various product teams, enabling them to build custom LLM-powered applications on the ZCoder platform."
+    ]
+  }
+]

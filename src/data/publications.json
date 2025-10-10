@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "ATLAS - A Co-evolutionary Framework for Automatic Tuning of Adversarial Neural Networks",
+    "authors": ["Saurav Shyju"],
+    "venue": "GECCO '23 Companion",
+    "year": "2023",
+    "url": "https://dl.acm.org/doi/10.1145/3583133.3596376",
+    "pdf": "",
+    "abstract": "Generative Adversarial Networks (GANs) have gained popularity due to their ability to produce realistic examples from existing data without any supervision. However, they are dependent on their hyperparameters, the tuning of which is usually a manual task. Additionally, the computing resources required for such training are also extremely high. In this paper, ATLAS - a Cloud-based Co-evolutionary Framework for training such adversarial networks using Evolutionary Algorithms is proposed. ATLAS views the GAN components (generator and discriminator) as in a predator-prey relationship and involves co-evolution as a method to address the challenges of overfitting, exploding/vanishing gradients and tunes the hyperparameters of both the components of the GAN. The ATLAS framework is designed to be customizable, and resource flexible to allow for set-up and easy usage for training complex adversarial networks in both distributed and cloud environments. Experiments testing ATLAS capability for anomaly detection were performed and the results show that ATLAS can consistently evolve and produce high-performance GAN models."
+  },
+  {
+    "id": 2,
+    "title": "Dynamic RAG for Code CoPilots",
+    "authors": ["Saurav Shyju"],
+    "venue": "US Patent (Pending)",
+    "year": "2025",
+    "url": "",
+    "pdf": "",
+    "abstract": "",
+    "patentId": "19/052,365"
+  },
+  {
+    "id": 3,
+    "title": "Deep Repository Awareness for Large Language Models",
+    "authors": ["Saurav Shyju"],
+    "venue": "US Patent (Pending)",
+    "year": "2025",
+    "patentId": "19/052,365",
+    "url": "",
+    "pdf": "",
+    "abstract": ""
+  }
+]

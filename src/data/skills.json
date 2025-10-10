@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Languages",
+    "skills": ["Python", "Shell", "C", "Go", "SQL", "Cypher"]
+  },
+  {
+    "category": "Frameworks & Libraries",
+    "skills": ["Pandas", "NumPy", "PyTorch", "FastAPI", "Multi-processing", "LaTeX"]
+  },
+  {
+    "category": "Technologies",
+    "skills": ["Linux", "Redis", "MongoDB", "Neo4J", "Semantic Search", "Open Search", "Docker", "AST", "GPU", "ChromaDB", "GCP", "AWS", "Snowflake"]
+  },
+  {
+    "category": "Business Management",
+    "skills": ["Jira", "Confluence", "Bitbucket", "Gitlab", "Grafana", "GSuit"]
+  }
+]
