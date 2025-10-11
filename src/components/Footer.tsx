@@ -13,10 +13,10 @@ const Footer: React.FC = () => {
           <a href={`mailto:${siteData.email}`} className="text-gray-400 hover:text-gray-500 dark:hover:text-white">
             <Mail size={20} />
           </a>
-          <a href={`https://github.com/${siteData.social.github}`} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-white">
+                    <a href={siteData.social.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-white">
             <Github size={20} />
           </a>
-          <a href={`https://linkedin.com/in/${siteData.social.linkedin}`} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-white">
+                    <a href={siteData.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500 dark:hover:text-white">
             <Linkedin size={20} />
           </a>
         </div>
