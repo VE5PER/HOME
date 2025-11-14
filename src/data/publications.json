@@ -1,4 +1,14 @@
 [
+    {
+    "id": 4,
+    "title": "GAME: Generating Adversarial Malware through Evolutionary Augmentation",
+    "authors": ["Saurav Shyju"],
+    "venue": "Research Project",
+    "year": "2025",
+    "url": "",
+    "pdf": "",
+    "abstract": "This work introduces GAME, a research framework for generating adversarial Windows malware using evolutionary operators such as selection, mutation, and novelty search. The system automatically augments existing malware samples to explore diverse behavioral variants and evaluates them against industrial-grade malware detectors, achieving up to 80% evasion effectiveness in experiments. The framework further incorporates a large language model-assisted augmentation component that proposes new transformation strategies, which are validated in a fault-tolerant sandboxed environment, enabling a co-evolutionary loop between augmentation policies and detector responses."
+  },
   {
     "id": 1,
     "title": "ATLAS - A Co-evolutionary Framework for Automatic Tuning of Adversarial Neural Networks",

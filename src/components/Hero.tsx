@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { ArrowRight, Download } from 'lucide-react';
 import siteData from '../data/site.json';
 import AnimatedBackground from './AnimatedBackground';
@@ -20,20 +21,20 @@ const Hero: React.FC = () => {
         <p className="mt-4 text-lg md:text-xl text-indigo-600 dark:text-indigo-400 font-semibold">{siteData.title}</p>
         <p className="mt-4 max-w-2xl mx-auto text-3xl text-gray-500 dark:text-gray-400 font-dancing">{siteData.tagline}</p>
         <div className="mt-8 flex justify-center gap-4">
-          <a
-            href="#projects"
+          <NavLink
+            to="/research"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            View Projects
+            View Research
             <ArrowRight className="ml-2 -mr-1 h-5 w-5" />
-          </a>
+          </NavLink>
           <a
             href="https://drive.google.com/file/d/1MORy9okvPwiFq3ZV7Jbj3eMekPFL112_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-indigo-700 dark:text-indigo-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-            Download Resume
+            Show Resume
             <Download className="ml-2 -mr-1 h-5 w-5" />
           </a>
         </div>
