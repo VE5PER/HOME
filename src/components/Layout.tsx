@@ -12,9 +12,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="min-h-dvh flex flex-col bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Navbar />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow pt-24">{children}</main>
       <Footer />
     </div>
   );

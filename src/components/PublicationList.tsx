@@ -9,7 +9,16 @@ const PublicationList: React.FC = () => {
         <div key={pub.id} className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white">{pub.title}</h3>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-            {pub.authors.join(', ')}
+            {pub.authors.map((author, index) => (
+              <span key={author + index}>
+                {author === 'Saurav Shyju' ? (
+                  <span className="underline">{author}</span>
+                ) : (
+                  author
+                )}
+                {index < pub.authors.length - 1 && ', '}
+              </span>
+            ))}
           </p>
           <p className="text-md font-semibold text-indigo-600 dark:text-indigo-400 mt-2">
             {pub.venue}, {pub.year}

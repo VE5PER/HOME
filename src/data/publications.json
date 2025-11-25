@@ -2,7 +2,7 @@
     {
     "id": 4,
     "title": "GAME: Generating Adversarial Malware through Evolutionary Augmentation",
-    "authors": ["Saurav Shyju"],
+    "authors": ["Saurav Shyju", "Ritwik Murali"],
     "venue": "Research Project",
     "year": "2025",
     "url": "",
@@ -12,7 +12,7 @@
   {
     "id": 1,
     "title": "ATLAS - A Co-evolutionary Framework for Automatic Tuning of Adversarial Neural Networks",
-    "authors": ["Saurav Shyju"],
+    "authors": ["Saurav Shyju", "Ritwik Murali"],
     "venue": "GECCO '23 Companion",
     "year": "2023",
     "url": "https://dl.acm.org/doi/10.1145/3583133.3596376",
@@ -22,7 +22,7 @@
   {
     "id": 2,
     "title": "Dynamic RAG for Code CoPilots",
-    "authors": ["Saurav Shyju"],
+    "authors": ["Saurav Shyju", "Sai Venkatesh"],
     "venue": "US Patent (Pending)",
     "year": "2025",
     "url": "",
@@ -33,7 +33,7 @@
   {
     "id": 3,
     "title": "Deep Repository Awareness for Large Language Models",
-    "authors": ["Saurav Shyju"],
+    "authors": ["Saurav Shyju", "Sai Venkatesh"],
     "venue": "US Patent (Pending)",
     "year": "2025",
     "patentId": "19/052,365",

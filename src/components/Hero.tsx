@@ -1,43 +1,80 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ArrowRight, Download } from 'lucide-react';
+import { motion } from 'framer-motion';
 import siteData from '../data/site.json';
 import AnimatedBackground from './AnimatedBackground';
 import profilePic from '../data/dp.jpg';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative bg-white dark:bg-gray-800 text-center py-20 md:py-32 overflow-hidden">
+    <section className="relative bg-background-light dark:bg-slate-900 text-center py-20 md:py-32 overflow-hidden min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 z-0">
         <AnimatedBackground />
       </div>
       <div className="container mx-auto px-4 z-10 relative">
-        <img
-          src={profilePic} // Placeholder image
-          alt="Saurav Shyju"
-          className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-indigo-500 shadow-lg"
-        />
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">{siteData.name}</h1>
-        <p className="mt-4 text-lg md:text-xl text-indigo-600 dark:text-indigo-400 font-semibold">{siteData.title}</p>
-        <p className="mt-4 max-w-2xl mx-auto text-3xl text-gray-500 dark:text-gray-400 font-dancing">{siteData.tagline}</p>
-        <div className="mt-8 flex justify-center gap-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <img
+            src={profilePic}
+            alt="Saurav Shyju"
+            className="w-40 h-40 rounded-full mx-auto mb-8 border-4 border-white dark:border-slate-800 shadow-2xl object-cover"
+          />
+        </motion.div>
+
+        <motion.h1
+          className="text-5xl md:text-7xl font-bold text-text-light-primary dark:text-white tracking-tight mb-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          {siteData.name}
+        </motion.h1>
+
+        <motion.p
+          className="text-xl md:text-2xl text-indigo-600 dark:text-indigo-400 font-semibold mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          {siteData.title}
+        </motion.p>
+
+        <motion.p
+          className="max-w-2xl mx-auto text-2xl md:text-3xl text-text-light-secondary dark:text-slate-300 font-dancing mb-10 leading-relaxed"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          {siteData.tagline}
+        </motion.p>
+
+        <motion.div
+          className="flex flex-col sm:flex-row justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
           <NavLink
             to="/research"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/30 transform hover:-translate-y-1"
           >
             View Research
-            <ArrowRight className="ml-2 -mr-1 h-5 w-5" />
+            <ArrowRight className="ml-2 h-5 w-5" />
           </NavLink>
           <a
             href="https://drive.google.com/file/d/1MORy9okvPwiFq3ZV7Jbj3eMekPFL112_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-indigo-700 dark:text-indigo-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full text-text-light-secondary dark:text-slate-200 bg-white dark:bg-slate-800 border border-zinc-200 dark:border-slate-700 hover:bg-zinc-50 dark:hover:bg-slate-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Show Resume
-            <Download className="ml-2 -mr-1 h-5 w-5" />
+            <Download className="ml-2 h-5 w-5" />
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

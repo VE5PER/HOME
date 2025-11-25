@@ -11,6 +11,7 @@ interface Project {
   images: string[];
   github?: string;
   demo?: string;
+  date?: string;
 }
 
 const Projects: React.FC = () => {
