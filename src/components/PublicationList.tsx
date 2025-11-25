@@ -1,12 +1,37 @@
 import React from 'react';
 import publicationsData from '../data/publications.json';
 import { FileText, Link as LinkIcon } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 }
+};
 
 const PublicationList: React.FC = () => {
   return (
-    <div className="space-y-8">
+    <motion.div
+      className="space-y-8"
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
       {publicationsData.map((pub) => (
-        <div key={pub.id} className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
+        <motion.div
+          key={pub.id}
+          className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6"
+          variants={item}
+        >
           <h3 className="text-xl font-bold text-gray-900 dark:text-white">{pub.title}</h3>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
             {pub.authors.map((author, index) => (
@@ -45,9 +70,9 @@ const PublicationList: React.FC = () => {
               </a>
             )}
           </div>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

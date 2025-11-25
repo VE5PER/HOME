@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProjectGrid from '../components/ProjectGrid';
 import ProjectModal from '../components/ProjectModal';
+import { motion } from 'framer-motion';
 
 interface Project {
   id: number;
@@ -27,7 +28,14 @@ const Projects: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">Projects</h1>
+      <motion.h1
+        className="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Projects
+      </motion.h1>
       <ProjectGrid onProjectClick={handleProjectClick} />
       <ProjectModal project={selectedProject} onClose={handleCloseModal} />
     </div>
