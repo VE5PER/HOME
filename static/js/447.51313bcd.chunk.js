@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhomepage=self.webpackChunkhomepage||[]).push([[447],{447:(e,s,h)=>{h.r(s),h.d(s,{default:()=>a});h(43);var l=h(579);const a=()=>(0,l.jsxs)("div",{children:[(0,l.jsx)("h1",{className:"text-3xl font-bold",children:"Blog"}),(0,l.jsx)("p",{children:"This is the blog page."})]})}}]);
-//# sourceMappingURL=447.51313bcd.chunk.js.map

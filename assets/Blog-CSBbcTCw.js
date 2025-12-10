@@ -1,0 +1,1 @@
+import{j as s}from"./index-yFBg-O95.js";const t=()=>s.jsxs("div",{children:[s.jsx("h1",{className:"text-3xl font-bold",children:"Blog"}),s.jsx("p",{children:"This is the blog page."})]});export{t as default};
