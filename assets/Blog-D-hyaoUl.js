@@ -1,1 +1,0 @@
-import{l as e,n as t}from"./index-B6o5C6qa.js";e();var n=t(),r=()=>(0,n.jsxs)(`div`,{children:[(0,n.jsx)(`h1`,{className:`text-3xl font-bold`,children:`Blog`}),(0,n.jsx)(`p`,{children:`This is the blog page.`})]});export{r as default};
