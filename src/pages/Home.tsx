@@ -1,37 +1,21 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import React from 'react';
 import Hero from '../components/Hero';
 import About from './About';
 import Research from './Research';
 import Projects from './Projects';
 import Experience from './Experience';
 import Contact from './Contact';
+import ScrollDownNotifier from '../components/ScrollDownNotifier';
 
 const tourSections = ['portfolio-about', 'portfolio-research', 'portfolio-projects', 'portfolio-experience', 'portfolio-contact'];
 
 const Home: React.FC = () => {
-  const tourTimeouts = useRef<number[]>([]);
-
-  const clearTourTimeouts = useCallback(() => {
-    tourTimeouts.current.forEach((timeout) => window.clearTimeout(timeout));
-    tourTimeouts.current = [];
-  }, []);
-
-  const startPortfolioTour = useCallback(() => {
-    clearTourTimeouts();
-
-    tourSections.forEach((sectionId, index) => {
-      const timeout = window.setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      }, index * 2500);
-
-      tourTimeouts.current.push(timeout);
+  const startPortfolioTour = () => {
+    document.getElementById('portfolio-about')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
     });
-  }, [clearTourTimeouts]);
-
-  useEffect(() => clearTourTimeouts, [clearTourTimeouts]);
+  };
 
   return (
     <div>
@@ -52,6 +36,7 @@ const Home: React.FC = () => {
       <section id="portfolio-contact" className="scroll-mt-24">
         <Contact />
       </section>
+      <ScrollDownNotifier sections={tourSections} />
     </div>
   );
 };
