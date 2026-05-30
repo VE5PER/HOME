@@ -1,20 +1,13 @@
 import React, { useMemo } from 'react';
-import Particles, { initParticlesEngine } from '@tsparticles/react';
+import Particles, { ParticlesProvider } from '@tsparticles/react';
 import { loadLinksPreset } from '@tsparticles/preset-links';
-import { IOptions, RecursivePartial } from '@tsparticles/engine';
-import { useEffect, useState } from 'react';
+import { Engine, IOptions, RecursivePartial } from '@tsparticles/engine';
+
+const initEngine = async (engine: Engine) => {
+  await loadLinksPreset(engine);
+};
 
 const AnimatedBackground: React.FC = () => {
-  const [init, setInit] = useState(false);
-
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadLinksPreset(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
-
   const options: RecursivePartial<IOptions> = useMemo(
     () => ({
       preset: 'links',
@@ -60,11 +53,11 @@ const AnimatedBackground: React.FC = () => {
     [],
   );
 
-  if (init) {
-    return <Particles id="tsparticles" options={options} />;
-  }
-
-  return <></>;
+  return (
+    <ParticlesProvider init={initEngine}>
+      <Particles id="tsparticles" options={options} />
+    </ParticlesProvider>
+  );
 };
 
 export default AnimatedBackground;

@@ -1,6 +1,23 @@
 [
   {
     "id": 0,
+    "title": "Review Buddy",
+    "shortDesc": "An autonomous PR review bot that generates repository-tailored inline feedback, code summaries, and suggestions.",
+    "longDesc": "Architected an autonomous PR review bot utilizing user-defined Skill.MD profiles to generate repository-tailored inline feedback, code summaries, and suggestions. Implemented robust workflow orchestration using Temporal.io to manage distributed agent execution and optimized the underlying agent harness using context and prompt caching.",
+    "techTags": [
+      "Temporal.io",
+      "Python",
+      "FastAPI",
+      "OpenAI API",
+      "PostgreSQL"
+    ],
+    "images": [],
+    "github": "",
+    "demo": "",
+    "date": "2026"
+  },
+  {
+    "id": 1,
     "title": "GAME (Generating Adversarial Malware through Evolution)",
     "shortDesc": "A research framework for evolving Windows malware variants that evade industrial malware detectors.",
     "longDesc": "Created a research framework for augmenting Windows malware through evolutionary operators such as selection, mutation, and novelty search, achieving up to 80% evasion effectiveness against industrial malware detectors. Integrated an LLM-assisted augmentation component into a co-evolutionary system that proposes augmentation strategies, which are then validated in a fault-tolerant sandboxed environment.",
@@ -8,7 +25,8 @@
       "Python",
       "OpenAI API",
       "Docker",
-      "Qemu"
+      "Cuckoo",
+      "VirusTotal"
     ],
     "images": [],
     "github": "",
@@ -17,10 +35,10 @@
     "type": "Research Project"
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Auto Core Dump Analysis",
     "shortDesc": "An autonomous Core Dump Analysis system using LLMs to analyze stack traces and reduce time-to-fix for crashes.",
-    "longDesc": "Engineered and implemented an autonomous Core Dump Analysis system integrating Large Language Models (LLMs) for Deep Repository Awareness to intelligently detect and analyze stack traces and call hierarchies, drastically reducing time-to-fix for customer-reported crashes.",
+    "longDesc": "Engineered and implemented an autonomous Core Dump Analysis system integrating Large Language Models (LLMs), AST and Call Graph parsing for Deep Repository Awareness to intelligently detect and analyze stack traces and call hierarchies, drastically reducing time-to-fix for customer-reported crashes.",
     "techTags": [
       "Python",
       "Neo4j",
@@ -34,7 +52,22 @@
     "date": "2025"
   },
   {
-    "id": 2,
+    "id": 3,
+    "title": "CodeSenZ",
+    "shortDesc": "An automated risk-mapping engine that identifies volatile functions and high-churn components.",
+    "longDesc": "Developed an automated risk-mapping engine that parses repository history to identify volatile functions and high-churn components; synchronized bug-tracking data with code-level granularity to provide proactive warnings during the development lifecycle.",
+    "techTags": [
+      "Python",
+      "PostgreSQL",
+      "FastAPI"
+    ],
+    "images": [],
+    "github": "",
+    "demo": "",
+    "date": "2024"
+  },
+  {
+    "id": 4,
     "title": "LOG Recommender System",
     "shortDesc": "An item-based collaborative filtering system to accelerate Root Cause Analysis for log patterns.",
     "longDesc": "Developed an item based collaborative filtering for the in-house log analyzer to accelerate Root Cause Analysis by identifying similar log patterns and recommending related issues that are already solved.",
@@ -51,7 +84,7 @@
     "date": "2023"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "ProjectEye",
     "shortDesc": "A desktop and web application for medical image collection, annotation, and storage for building ML models.",
     "longDesc": "Designed and deployed a full-fledged window stand-alone application and a web app to facilitate a user-friendly end-user medical image collection, censoring, editing, annotating experience and a customized storage framework in accordance to client requirements in native performance with the aim of building ML models.",
@@ -66,7 +99,7 @@
     "date": "2022"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "Civitas - Community Service App",
     "shortDesc": "A community service app with features like complaint booking, garbage collection, and a neighbor connect feature.",
     "longDesc": "Designed and built a cross-platform app to assist with general community service requirements like booking complaints, garbage collection, parking management, and a neighbor connect feature, along with an integrated chatbot for natural language queries. The app was built using Flutter, Dialogflow, and various APIs.",
@@ -82,7 +115,7 @@
     "date": "2021"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Automated Elective Management System",
     "shortDesc": "An application to automatically allocate student elective preferences on a first-come, first-served basis.",
     "longDesc": "Built an application that automatically allocates student elective preferences on a first-come, first-served basis. The system was developed using Flutter, NodeJS, Express, and MongoDB, and deployed in Docker containers. The project followed AGILE practices with tracking in JIRA and GitHub.",

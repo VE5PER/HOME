@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { GitFork, Link, Mail } from 'lucide-react';
 import siteData from '../data/site.json';
 
 const Footer: React.FC = () => {
@@ -14,10 +14,10 @@ const Footer: React.FC = () => {
             <Mail size={20} />
           </a>
           <a href={siteData.social.github} target="_blank" rel="noopener noreferrer" className="text-text-light-secondary hover:text-text-light-primary dark:text-slate-400 dark:hover:text-white">
-            <Github size={20} />
+            <GitFork size={20} />
           </a>
           <a href={siteData.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-text-light-secondary hover:text-text-light-primary dark:text-slate-400 dark:hover:text-white">
-            <Linkedin size={20} />
+            <Link size={20} />
           </a>
         </div>
       </div>

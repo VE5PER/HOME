@@ -1,12 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import siteData from '../data/site.json';
 import AnimatedBackground from './AnimatedBackground';
 import profilePic from '../data/dp.jpg';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  onStartTour: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onStartTour }) => {
   return (
     <section className="relative bg-background-light dark:bg-slate-900 text-center py-20 md:py-32 overflow-hidden min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 z-0">
@@ -58,22 +61,14 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <NavLink
-            to="/research"
+          <button
+            type="button"
+            onClick={onStartTour}
             className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/30 transform hover:-translate-y-1"
           >
-            View Research
+            Show Portfolio
             <ArrowRight className="ml-2 h-5 w-5" />
-          </NavLink>
-          <a
-            href="https://drive.google.com/file/d/1MORy9okvPwiFq3ZV7Jbj3eMekPFL112_/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full text-text-light-secondary dark:text-slate-200 bg-white dark:bg-slate-800 border border-zinc-200 dark:border-slate-700 hover:bg-zinc-50 dark:hover:bg-slate-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            Show Resume
-            <Download className="ml-2 h-5 w-5" />
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

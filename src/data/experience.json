@@ -1,23 +1,46 @@
 [
   {
-    "role": "Senior Software Engineer",
-    "organization": "Zscaler",
-    "dates": "August 2023 - Present",
+    "role": "Senior Software Development Engineer",
+    "organization": "Zscaler, Inc.",
+    "location": "Bangalore, India",
+    "dates": "Apr 2025 – Present",
     "type": "Full Time",
     "responsibilities": [
-      "Drove the successful adoption of Generative AI tools, including Gemini Code Assist and Windsurf, across an organization of 1600+ engineers, achieving over 60% user engagement and a significant boost in productivity within the first four months.",
-      "Managed a strategic partnership with Google, ensuring the successful enablement and integration of cutting-edge AI tools within the engineering organization.",
-      "Architected and spearheaded the development of ZCoder, the company's first internally-hosted LLM coding assistant. Drove the project from initial concept to General Availability, achieving widespread adoption across the entire engineering organization and receiving direct kudos from the CEO, CTO, and CIO.",
-      "Invented and engineered a novel dependency and repository parsing methodology to provide deep contextual awareness for LLMs (Patent Pending). This innovation significantly enhanced the model’s ability to reason about complex, unfamiliar codebases.",
-      "Led the technical evaluation, proof-of-concept, and procurement process for third-party AI tools, including Google’s Gemini Code Assist, serving as the subject matter expert to establish rigorous evaluation frameworks and guide strategic decision-making.",
-      "Designed and implemented the scalable, cloud-native infrastructure for Code Copilots on Kubernetes (EKS), integrating technologies such as Neo4j for graph-based analysis, Redis for high-speed caching, and MongoDB for document storage to ensure high availability and performance.",
+      "Technical owner and lead developer for the design and enterprise deployment of an in-house AI PR review system; scaled platform capacity to 1,000+ daily PRs and achieved an 85% cost reduction in operational token overhead while shifting vulnerability detection earlier in the development cycle.",
+      "Managed a multimillion-dollar budget to drive strategic GenAI initiatives across Zscaler Engineering, achieving 75%+ user engagement and over 90% code acceptance within 4 months across 2,500+ engineers using Gemini Code Assist, Windsurf and Devin.",
+      "Managed strategic partnerships with Google and Cognition as the primary engineering POC, driving the secure end-to-end system design, compliance review, and successful integration of cutting-edge AI tools (including Claude, Gemini, Devin, and Windsurf) across the engineering organization.",
+      "Led the technical evaluation, proof-of-concept, and procurement process for third-party AI tools, including Google's Gemini Code Assist, Cognition, and Claude, serving as the subject matter expert to establish rigorous evaluation frameworks and guide strategic decision-making.",
       "Championed AI/ML adoption by presenting at company-wide tech talks and conducting over 30 tailored onboarding sessions for various product teams, enabling them to build custom LLM-powered applications on the ZCoder platform."
     ]
   },
   {
-    "role": "Researcher",
-    "organization": "Independent Researcher",
-    "dates": "2021 - Present",
+    "role": "Software Development Engineer",
+    "organization": "Zscaler, Inc.",
+    "location": "Bangalore, India",
+    "dates": "Aug 2024 – Apr 2025",
+    "type": "Full Time",
+    "responsibilities": [
+      "Architected and spearheaded the development of ZCoder, the company's first internally hosted LLM coding assistant. Led the project from initial concept to general availability, achieving widespread adoption across the entire engineering organization and receiving direct kudos from the CEO, CTO, and CIO.",
+      "Invented a novel, patent-pending dependency and repository parsing methodology to provide deep contextual awareness for LLMs. This innovation enabled ZCoder's ability to reason about complex, unfamiliar codebases at sub millisecond speed.",
+      "Designed and implemented the scalable, cloud infrastructure for Code Copilots on Kubernetes (EKS), integrating technologies such as Neo4j for graph-based analysis, vLLM for optimized local inference, Redis for high-speed caching, and MongoDB for document storage to ensure high availability and performance serving over 1,200 Daily Active Users."
+    ]
+  },
+  {
+    "role": "Associate Software Development Engineer",
+    "organization": "Zscaler, Inc.",
+    "location": "Bangalore, India",
+    "dates": "Feb 2023 – Aug 2024",
+    "type": "Full Time",
+    "responsibilities": [
+      "Developed a machine learning service for the in-house log analyzer (LOGAN) to identify similar log bundles and recommend related JIRA issues, directly accelerating root cause analysis for support and engineering teams.",
+      "Developed a semantic search engine using BERT and PyTorch to analyze git commit logs, detecting 'feature drift' and ensuring release integrity across multiple development branches and feature reporting. Detected over 2,000+ missing commits that were triaged immediately."
+    ]
+  },
+  {
+    "role": "Independent Researcher",
+    "organization": "",
+    "location": "",
+    "dates": "2021 – Present",
     "type": "Part Time",
     "responsibilities": [
       "Developed ATLAS, a cloud-based co-evolutionary framework for automatic tuning of adversarial neural networks, published at GECCO '23. Addressed challenges of overfitting and hyperparameter tuning in GANs through evolutionary co-optimization.",

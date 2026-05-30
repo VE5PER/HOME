@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { GitFork, Link, Mail } from 'lucide-react';
 import siteData from '../data/site.json';
 import AnimatedBackground from '../components/AnimatedBackground';
 
@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
           {siteData.social.github && (
             <ContactCard
               href={siteData.social.github}
-              icon={<Github size={32} />}
+              icon={<GitFork size={32} />}
               title="GitHub"
               value="View Profile"
               delay={0.3}
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
           {siteData.social.linkedin && (
             <ContactCard
               href={siteData.social.linkedin}
-              icon={<Linkedin size={32} />}
+              icon={<Link size={32} />}
               title="LinkedIn"
               value="Connect"
               delay={0.4}

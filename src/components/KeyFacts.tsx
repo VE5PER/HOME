@@ -6,8 +6,8 @@ const keyFacts = [
   { icon: <MapPin size={20} />, label: 'Location', value: siteData.location },
   { icon: <Mail size={20} />, label: 'Email', value: <a href={`mailto:${siteData.email}`} className="hover:underline">{siteData.email}</a> },
   { icon: <Book size={20} />, label: 'ORCID', value: <a href={`https://orcid.org/${siteData.social.orcid}`} target="_blank" rel="noopener noreferrer" className="hover:underline">{siteData.social.orcid}</a> },
-  { icon: <Briefcase size={20} />, label: 'Current Role', value: 'Senior Software Engineer' }, // Placeholder
-  { icon: <GraduationCap size={20} />, label: 'Education', value: 'B.Tech, Amrita University' }, // Placeholder
+  { icon: <Briefcase size={20} />, label: 'Current Role', value: 'Senior Software Development Engineer, Zscaler' },
+  { icon: <GraduationCap size={20} />, label: 'Education', value: 'B.Tech, Amrita University' },
 ];
 
 const KeyFacts: React.FC = () => {

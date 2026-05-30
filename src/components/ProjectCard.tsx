@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { GitFork, ExternalLink } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -47,7 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
         <div className="flex justify-end space-x-4">
           {project.github && (
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-text-light-secondary hover:text-indigo-500 dark:text-slate-400 dark:hover:text-indigo-400">
-              <Github size={20} />
+              <GitFork size={20} />
             </a>
           )}
           {project.demo && (

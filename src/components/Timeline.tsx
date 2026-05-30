@@ -11,7 +11,8 @@ interface ExperienceItem {
   responsibilities: string[];
 }
 
-const parseDate = (dateStr: string): Date => {
+const parseDate = (dateStr?: string): Date => {
+  if (!dateStr) return new Date();
   if (dateStr.toLowerCase() === 'present') return new Date();
   const parts = dateStr.split(' ');
   if (parts.length === 1) return new Date(`${parts[0]}-01-01`); // Year only
@@ -19,7 +20,7 @@ const parseDate = (dateStr: string): Date => {
 };
 
 const getStartEndDate = (dates: string): { start: Date; end: Date } => {
-  const [startStr, endStr] = dates.split(' - ');
+  const [startStr, endStr] = dates.split(/\s+[–-]\s+/);
   return {
     start: parseDate(startStr),
     end: parseDate(endStr),
